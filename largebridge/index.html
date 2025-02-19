@@ -304,7 +304,7 @@
         
   
   <span class="md-ellipsis">
-    Swift Package Manager for Kotlin Multiplatform
+    Swift Package Manager For Kotlin Multiplatform
     
   </span>
   
@@ -497,7 +497,7 @@
         <li class="md-nav__item">
   <a href="#create-a-local-package" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a local package
+      Create A Local Package
     </span>
   </a>
   
@@ -506,7 +506,7 @@
         <li class="md-nav__item">
   <a href="#choose-your-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      Choose your Editor
+      Choose Your Editor
     </span>
   </a>
   
@@ -587,7 +587,7 @@
         <li class="md-nav__item">
   <a href="#dont-store-sensitive-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Don't store sensitive data
+      Don't Store Sensitive Data
     </span>
   </a>
   
@@ -803,7 +803,7 @@
         <li class="md-nav__item">
   <a href="#create-a-local-package" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a local package
+      Create A Local Package
     </span>
   </a>
   
@@ -812,7 +812,7 @@
         <li class="md-nav__item">
   <a href="#choose-your-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      Choose your Editor
+      Choose Your Editor
     </span>
   </a>
   
@@ -893,7 +893,7 @@
         <li class="md-nav__item">
   <a href="#dont-store-sensitive-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Don't store sensitive data
+      Don't Store Sensitive Data
     </span>
   </a>
   
@@ -922,12 +922,12 @@
 <p>If you plan to have a large bridge for using a particular Pure Swift Package, like Stripe, working with an editor without code completion can be difficult.</p>
 <p>The solution is to work with a <strong>local package</strong> you will add to your plugin configuration.</p>
 <p><strong>The big advantage is that you can test your code before adding it to your KMP project</strong>.</p>
-<h2 id="create-a-local-package">Create a local package</h2>
+<h2 id="create-a-local-package">Create A Local Package</h2>
 <ul>
 <li>From command line : <code>swift package init --name YouPackageName</code></li>
 <li>From Xcode : File -&gt; New -&gt; Package -&gt; Library</li>
 </ul>
-<h2 id="choose-your-editor">Choose your Editor</h2>
+<h2 id="choose-your-editor">Choose Your Editor</h2>
 <p>You can either use <strong>Xcode</strong> or <strong>VSCode with the Swift Plugin</strong>; both are fine.</p>
 <h2 id="package-manifest">Package Manifest</h2>
 <p>A Swift Package is based on a Manifest, the Package.swift (<a href="https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html">official documentation</a>)</p>
@@ -971,7 +971,7 @@
 <p>Usually located at <code>Sources/[packageName]</code>, it has the same requirement as the plugin's bridge source files.</p>
 <div class="admonition warning">
 <p class="admonition-title">Make your Swift code compatible with Kotlin.</p>
-<p>Your Swift code needs to be marked as <a href="https://akdebuging.com/posts/what-is-objc-and-objcmember/">@objc/@objcMembers</a> and the visibility set as <code>public</code>
+<p>Your Swift code needs to be marked as <a href="https://www.hackingwithswift.com/example-code/language/what-is-the-objcmembers-attribute">@objc/@objcMembers</a> and the visibility set as <code>public</code>
 or it won't be exported and available from your Kotlin code.</p>
 </div>
 <h3 id="example_1">Example</h3>
@@ -1014,10 +1014,10 @@ or it won't be exported and available from your Kotlin code.</p>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="dont-store-sensitive-data">Don't store sensitive data</h2>
+<h2 id="dont-store-sensitive-data">Don't Store Sensitive Data</h2>
 <div class="admonition warning">
 <p class="admonition-title">The local package source is visible</p>
-<p>If you share this package, don't put sensitive data inside, as it needs to be <a href="https://frankois944.github.io/spm4Kmp/bridgeWithDependencies/#gradle">added to the xCode project</a>.</p>
+<p>If you share this package, don't put sensitive data inside, as it needs to be <a href="https://frankois944.github.io/spm4Kmp/bridgeWithDependencies/#gradle">added to the Xcode project</a>.</p>
 </div>
 <p>You can use the default plugin's bridge if needed, as it's not visible from the application or your shared Kotlin library.</p>
 
