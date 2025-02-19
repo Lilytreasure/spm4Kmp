@@ -778,17 +778,18 @@
 <a href="https://sonarcloud.io/summary/new_code?id=frankois944_spm4Kmp"><img alt="Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=frankois944_spm4Kmp&amp;metric=coverage" /></a>
 <a href="https://sonarcloud.io/summary/new_code?id=frankois944_spm4Kmp"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=frankois944_spm4Kmp&amp;metric=alert_status" /></a>
 <a href="https://github.com/frankois944/spm4Kmp/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/frankois944/spm4kmp" /></a></p>
-<p>The Swift Package Manager for Kotlin Multiplatform Plugin, aka <code>spmForKmp</code> Gradle Plugin, is an <strong>alternative of the <a href="https://blog.cocoapods.org/CocoaPods-Specs-Repo/">dying</a> CocoaPods Plugin</strong>.</p>
-<p>It will help you to integrate Swift Package and simplify communication between Swift/Kotlin Multiplatform projects targeting Apple platform.</p>
-<p>The plugin uses the embedded Swift Package Manager, so no third-party dependency needed.</p>
+<p>The Swift Package Manager for Kotlin Multiplatform Plugin, aka <code>spmForKmp</code> Gradle Plugin, is an <strong>alternative of the <a href="https://blog.cocoapods.org/CocoaPods-Specs-Repo/">dying</a> CocoaPods Plugin</strong> used by <a href="https://kotlinlang.org/docs/native-cocoapods.html#set-up-an-environment-to-work-with-cocoapods">KMP cocoapods plugin</a>.</p>
+<p>It will help you to integrate Swift Package and simplify communication between Swift/Kotlin Multiplatform projects targeting the <strong>Apple platform</strong>.</p>
+<p>The plugin uses the embedded Swift Package Manager, so <strong>no third-party dependency is needed</strong>, and it's less intrusive.</p>
 <div class="admonition warning">
 <p class="admonition-title">Please Be Aware</p>
-<p><a href="https://kotlinlang.org/docs/native-objc-interop.html#importing-swift-objective-c-libraries-to-kotlin">Pure Swift packages can't be exported to Kotlin</a>; creating a bridge with this plugin is a solution to bypass this issue.</p>
+<p><a href="https://kotlinlang.org/docs/native-objc-interop.html#importing-swift-objective-c-libraries-to-kotlin">Pure Swift packages can't be exported to Kotlin</a>; the plugin will help you to create a bridge to bypass this issue.</p>
+<p>It's a manual job, but until the Swift-import is (not currently planned) available in KMP, it's the only way.</p>
 </div>
 <h2 id="features">Features</h2>
 <ul>
-<li><strong>Create a Swift&lt;-&gt;Kotlin bridge</strong>: Use your own Swift code for functionality that can't be done in Kotlin.</li>
-<li><strong>Use SPM third-Party Dependency</strong>: Add external dependency in your bridge</li>
+<li><strong>Create a Swift&lt;-&gt;Kotlin bridge</strong>: Import your own Swift code for functionality that can't be done in Kotlin.</li>
+<li><strong>Use SPM third-Party Dependency</strong>: Add external dependency and use it inside your bridge</li>
 <li><strong>Import Swift-compatible code to Kotlin</strong>: Enable SPM dependencies and your own Swift code to be exposed directly in your Kotlin code (if compatible).</li>
 </ul>
 <h2 id="feedback">Feedback</h2>
