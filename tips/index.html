@@ -543,6 +543,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Reduce Build Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cicd-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD Caching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -738,6 +753,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Reduce Build Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cicd-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD Caching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -761,8 +791,13 @@
 
 <h1 id="tips">Tips</h1>
 <h2 id="reduce-build-time">Reduce Build Time</h2>
-<p><strong>Since the version 0.4.0</strong></p>
-<p>You can cache/save the <code>build/spmKmpPlugin</code> folder to reduce the build time.</p>
+<ul>
+<li><strong>Since the version 0.4.0</strong></li>
+</ul>
+<p><a href="../references/swiftPackageConfig/#spmworkingpath">spmWorkingPath</a> has been added to change the path to Swift Package working file.</p>
+<p>By settings <a href="../references/swiftPackageConfig/#spmworkingpath">spmWorkingPath</a> outside of the build folder, the working files won't be removed if you clean the project.</p>
+<h3 id="cicd-caching">CI/CD Caching</h3>
+<p>Add to your cache the content of <code>build/spmKmpPlugin</code> folder or the <code>spmWorkingDir</code> value if set.</p>
 <p>Also, check my <a href="https://github.com/frankois944/spm4Kmp/blob/main/.github/workflows/pre-merge.yaml">GitHub action workflow</a> where I build the example app with cached built files.</p>
 
 
