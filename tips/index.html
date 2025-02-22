@@ -796,6 +796,7 @@
 </ul>
 <p><a href="../references/swiftPackageConfig/#spmworkingpath">spmWorkingPath</a> has been added to change the path to Swift Package working file.</p>
 <p>By settings <a href="../references/swiftPackageConfig/#spmworkingpath">spmWorkingPath</a> outside of the build folder, the working files won't be removed if you clean the project.</p>
+<p>Swift Package Manager has its own cache, so it's fined to detach it from the Kotlin build folder.</p>
 <h3 id="cicd-caching">CI/CD Caching</h3>
 <p>Add to your cache the content of <code>build/spmKmpPlugin</code> folder or the <code>spmWorkingDir</code> value if set.</p>
 <p>Also, check my <a href="https://github.com/frankois944/spm4Kmp/blob/main/.github/workflows/pre-merge.yaml">GitHub action workflow</a> where I build the example app with cached built files.</p>
