@@ -814,9 +814,9 @@
 </ul>
 <p><a href="../references/swiftPackageConfig/#spmworkingpath">spmWorkingPath</a> has been added to change the path to Swift Package working file.</p>
 <p>By setting <a href="https://github.com/frankois944/spm4Kmp/blob/cf80e65b3076d9e0bcd94a847e1209d4b9b91141/example/build.gradle.kts#L108C1-L108C104">spmWorkingPath</a> outside the build folder, the working files won't be removed if you clean the project.</p>
-<p>Swift Package Manager has its own cache, so it's fined to detach it from the Kotlin build folder.</p>
+<p>Swift Package Manager has its own cache, so it's fine to detach it from the Kotlin build folder.</p>
 <h3 id="cicd-caching">CI/CD Caching</h3>
-<p>Add to your cache the content of <code>build/spmKmpPlugin</code> folder or the <code>spmWorkingDir</code> value if set.</p>
+<p>Add to your cache the content of the <code>build/spmKmpPlugin</code> folder or the <code>spmWorkingDir</code> value if set.</p>
 <p>Also, check my <a href="https://github.com/frankois944/spm4Kmp/blob/main/.github/workflows/pre-merge.yaml">GitHub action workflow</a> where I build the example app with cached built files.</p>
 <h2 id="firebase">Firebase</h2>
 <p>An <a href="https://github.com/frankois944/FirebaseKmpDemo">full example</a> of how to implement Firebase with the plugin</p>
