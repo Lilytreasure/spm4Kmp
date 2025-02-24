@@ -849,6 +849,10 @@
 <h2 id="firebase">Firebase</h2>
 <p>An <a href="https://github.com/frankois944/FirebaseKmpDemo">full example</a> of how to implement Firebase with the plugin</p>
 <h2 id="working-with-objcnamesclasses-types">Working With 'objcnames.classes' Types</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This tips is breaking the IDE index of the exported Class</p>
+</div>
 <p>For example, when using a UIView (work with any ObjC Types ei: UIViewController,...).</p>
 <p><div class="language-swift highlight"><span class="filename">mySwiftBridge.swift</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Force cinterop to include `platform.UIKit.UIView`</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">@</span><span class="n">objcMembers</span><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">MyDummyView</span><span class="p">:</span><span class="w"> </span><span class="bp">UIView</span><span class="w"> </span><span class="p">{}</span>
