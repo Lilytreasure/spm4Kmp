@@ -579,6 +579,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#working-with-objcnamesclasses-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working with 'objcnames.classes' types
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -798,6 +807,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#working-with-objcnamesclasses-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working with 'objcnames.classes' types
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -830,6 +848,21 @@
 <p>Also, check my <a href="https://github.com/frankois944/spm4Kmp/blob/main/.github/workflows/pre-merge.yaml">GitHub action workflow</a> where I build the example app with cached built files.</p>
 <h2 id="firebase">Firebase</h2>
 <p>An <a href="https://github.com/frankois944/FirebaseKmpDemo">full example</a> of how to implement Firebase with the plugin</p>
+<h2 id="working-with-objcnamesclasses-types">Working with 'objcnames.classes' types</h2>
+<p>For example, when using a UIView (work with any ObjC Types).</p>
+<p><div class="language-swift highlight"><span class="filename">mySwiftBridge.swift</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">getView</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="bp">UIView</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="bp">UIView</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-kotlin highlight"><span class="filename">iosMain/myKotlinFile.kt</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">myView</span><span class="p">:</span><span class="w"> </span><span class="n">objcnames</span><span class="p">.</span><span class="na">classes</span><span class="p">.</span><span class="na">UIView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getView</span><span class="p">()</span>
+</span></code></pre></div></p>
+<p>use</p>
+<p><div class="language-swift highlight"><span class="filename">mySwiftBridge.swift</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nf">getView</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="bp">NSObject</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="bp">UIView</span><span class="p">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-kotlin highlight"><span class="filename">iosMain/myKotlinFile.kt</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">myView</span><span class="p">:</span><span class="w"> </span><span class="n">UIView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getView</span><span class="p">()</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">UIView</span>
+</span></code></pre></div></p>
 
 
 
