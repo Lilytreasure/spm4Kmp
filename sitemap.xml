@@ -13,10 +13,6 @@
          <lastmod>2025-02-24</lastmod>
     </url>
     <url>
-         <loc>https://frankois944.github.io/spm4Kmp/distribution/</loc>
-         <lastmod>2025-02-24</lastmod>
-    </url>
-    <url>
          <loc>https://frankois944.github.io/spm4Kmp/exportingDependencies/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
@@ -29,15 +25,7 @@
          <lastmod>2025-02-24</lastmod>
     </url>
     <url>
-         <loc>https://frankois944.github.io/spm4Kmp/largebridge/</loc>
-         <lastmod>2025-02-24</lastmod>
-    </url>
-    <url>
          <loc>https://frankois944.github.io/spm4Kmp/license/</loc>
-         <lastmod>2025-02-24</lastmod>
-    </url>
-    <url>
-         <loc>https://frankois944.github.io/spm4Kmp/multiTarget/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
     <url>
@@ -62,6 +50,18 @@
     </url>
     <url>
          <loc>https://frankois944.github.io/spm4Kmp/references/swiftPackageConfig/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://frankois944.github.io/spm4Kmp/usages/distribution/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://frankois944.github.io/spm4Kmp/usages/largebridge/</loc>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://frankois944.github.io/spm4Kmp/usages/multiTarget/</loc>
          <lastmod>2025-02-24</lastmod>
     </url>
 </urlset>
