@@ -442,6 +442,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#bridge-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridge Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gradle" class="md-nav__link">
     <span class="md-ellipsis">
       Gradle
@@ -822,6 +831,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#bridge-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridge Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gradle" class="md-nav__link">
     <span class="md-ellipsis">
       Gradle
@@ -865,6 +883,9 @@
 <p class="admonition-title">Note</p>
 <p>If your package doesn't work with the plugin, please create an <a href="https://github.com/frankois944/spm4Kmp/issues">issue</a>.</p>
 </div>
+<h2 id="bridge-dependencies">Bridge Dependencies</h2>
+<p>In a case the exported dependency is written in <a href="../faq/">Swift</a>, <strong>manual work needs to be done</strong> like <a href="../bridgeWithDependencies/#example">this</a>.</p>
+<p>For example, the <a href="https://github.com/krzyzanowskim/CryptoSwift">CryptoSwift</a> can't work directly on Kotlin, so the Plugin's bridge is here to fill the hole between Kotlin and Swift.</p>
 <h2 id="gradle">Gradle</h2>
 <p>The following configuration export to Kotlin the package <a href="https://github.com/firebase/firebase-ios-sdk">FirebaseAnalytics</a> which is a ObjC library.</p>
 <p>You can try to export a pure Swift library, but only basic ObjC will be available.</p>
