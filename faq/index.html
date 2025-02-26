@@ -864,7 +864,7 @@
 <p>The Swift language is commonly used in the Apple Platform and <a href="https://kotlinlang.org/docs/native-objc-interop.html#importing-swift-objective-c-libraries-to-kotlin">is not compatible with KMP, but only with ObjC</a>.</p>
 <p>Unlike Kotlin with Java, the interoperability between Swift and ObjC needs to be <a href="https://www.hackingwithswift.com/example-code/language/what-is-the-objc-attribute">explicitly declared</a>, but it's like a <strong>downgrade</strong>, and nobody want to do that.</p>
 <p>Some old libraries, like Firebase, are mainly written in ObjC or a few of them want to have the compatibility with ObjC.</p>
-<p>So mainly, Apple targets libraries that are written in Swift; you can check inside their repository, the Languages section to see which language they are using.</p>
+<p>So mainly, Apple's Platforms libraries are written in Swift; you can check inside their repository, the Languages section to see which language they are using.</p>
 <p>But sometimes, like <a href="https://github.com/frankois944/spm4Kmp/issues/68">google nearby</a>, a wrapper Swift &lt;- ObjC is made to increase the compatibility with Swift and make it unexportable to Kotlin.</p>
 <h2 id="when-exporting-a-product-i-have-only-swift_typedefs-or-swift_-available-in-my-kotlin-code"><strong>When exporting a product I have only SWIFT_TYPEDEFS or swift_... available in my Kotlin code.</strong></h2>
 <p>That means your product is not compatible with ObjC.</p>
