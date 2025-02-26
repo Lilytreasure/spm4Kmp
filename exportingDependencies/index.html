@@ -442,9 +442,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bridge-dependencies" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Bridge Dependencies
+      How It works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bridge-incompatible-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridge Incompatible Dependencies
     </span>
   </a>
   
@@ -831,9 +840,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bridge-dependencies" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Bridge Dependencies
+      How It works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bridge-incompatible-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bridge Incompatible Dependencies
     </span>
   </a>
   
@@ -877,18 +895,22 @@
 
 
 <h1 id="export-dependencies-to-kotlin">Export Dependencies To Kotlin</h1>
+<h2 id="how-it-works">How It works</h2>
 <p>On completion with <a href="../bridgeWithDependencies/">using external dependencies</a>, it's possible to export them to Kotlin, if they are <a href="../faq/#when-exporting-a-product-i-have-only-swift_typedefs-or-swift_-available-in-my-kotlin-code">compatible</a>.</p>
-<p>Exported dependency can be used inside the bridge and the Kotlin app.</p>
+<p>Exported dependency can be used inside the bridge, the Swift &amp; Kotlin App.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If your package doesn't work with the plugin, please create an <a href="https://github.com/frankois944/spm4Kmp/issues">issue</a>.</p>
 </div>
-<h2 id="bridge-dependencies">Bridge Dependencies</h2>
+<h2 id="bridge-incompatible-dependencies">Bridge Incompatible Dependencies</h2>
 <p>In a case the exported dependency is written in <a href="../faq/">Swift</a>, <strong>manual work needs to be done</strong> like <a href="../bridgeWithDependencies/#example">this</a>.</p>
 <p>For example, the <a href="https://github.com/krzyzanowskim/CryptoSwift">CryptoSwift</a> can't work directly on Kotlin, so the Plugin's bridge is here to fill the hole between Kotlin and Swift.</p>
 <h2 id="gradle">Gradle</h2>
 <p>The following configuration export to Kotlin the package <a href="https://github.com/firebase/firebase-ios-sdk">FirebaseAnalytics</a> which is a ObjC library.</p>
-<p>You can try to export a pure Swift library, but only basic ObjC will be available.</p>
+<div class="admonition warning">
+<p class="admonition-title">Don't export incompatible library</p>
+<p>Exporting an incompatible library is useless and will only increase build time.</p>
+</div>
 <div class="language-kotlin highlight"><span class="filename">build.gradle.kts</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">swiftPackageConfig</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">create</span><span class="p">(</span><span class="s">&quot;[cinteropName]&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="n">dependency</span><span class="p">(</span>
